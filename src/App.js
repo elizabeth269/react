@@ -15,12 +15,16 @@ function App() {
           <>
           <input type = 'text' onChange={(e) => {console.log(e.target.value);
           setRole(e.target.value);}}/>
+          <div class='flex flex-wrap' >
+
           <Employee name='Elizabeth' role='intern'/>
           <Employee name='jane' role='intern'/>
           <Employee name='lierr' role={role}/>
           <Employee name='bread'/>
           <Employee name= 'beans'/>
           <Employee name= 'butter'/>
+          </div>
+
           </>
 
         )
